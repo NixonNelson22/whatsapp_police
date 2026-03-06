@@ -1,0 +1,1 @@
+The idea with this project is to make use of selenium to automate moderating whatsapp messages which is not available in whatsapp for free with non minimal chances that whatsapp will detect it and block it.

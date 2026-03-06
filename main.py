@@ -1,16 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 
 
 def main():
     options = Options()
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(), options=options)
+    driver = webdriver.Firefox(options=options)
 
     driver.get("https://www.selenium.dev/selenium/web/web-form.html")
 
@@ -28,7 +27,6 @@ def main():
     text = message.text
 
     driver.quit()
-
 
 
 if __name__ == "__main__":
